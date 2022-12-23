@@ -1,10 +1,13 @@
-import { Meta, Links, Outlet } from '@remix-run/react';
-import styles from './styles/index.css';
+import { Meta, Links, Outlet, Scripts, LiveReload } from '@remix-run/react';
+import styles from '~/styles/index.css';
+import Header from '~/components/header';
+import Footer from '~/components/footer';
 
 export function meta() {
 	return {
 		charset: 'utf8',
 		title: 'GuitarLA - Remix',
+		description: 'Venta de guitarras, blog de musica y mas...',
 		viewport: 'width=device-width, initial-scale=1',
 	};
 }
@@ -50,7 +53,13 @@ function Document({ children }) {
 				<Meta />
 				<Links />
 			</head>
-			<body>{children}</body>
+			<body>
+				<Header />
+				{children}
+				<Footer />
+				<Scripts />
+				<LiveReload />
+			</body>
 		</html>
 	);
 }
