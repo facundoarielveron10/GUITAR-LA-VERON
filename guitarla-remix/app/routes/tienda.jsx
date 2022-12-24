@@ -30,7 +30,6 @@ const Tienda = () => {
 	return (
 		<main className="contenedor">
 			<h2 className="heading">Nuestra Coleccion</h2>
-
 			{guitarras?.length && (
 				<div className="guitarras-grid">
 					{guitarras?.map(guitarra => (

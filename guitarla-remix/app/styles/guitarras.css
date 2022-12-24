@@ -21,6 +21,8 @@
 	grid-template-columns: 2fr 3fr;
 	align-items: center;
 	gap: 1rem;
+	max-width: 70rem;
+	margin: 0 auto;
 }
 
 .guitarra .contenido {
@@ -54,24 +56,4 @@
 
 .guitarra .precio:hover {
 	color: #00b548;
-}
-
-.guitarra .enlace {
-	display: block;
-	padding: 1rem;
-	margin-top: 0;
-	font-size: 1.4rem;
-	font-weight: 700;
-	text-decoration: none;
-	text-align: center;
-	text-transform: uppercase;
-	border-radius: 0.4rem;
-	transition-property: background-color;
-	transition-duration: 300ms;
-	background-color: var(--black);
-	color: var(--white);
-}
-
-.guitarra .enlace:hover {
-	background-color: var(--primary);
 }
