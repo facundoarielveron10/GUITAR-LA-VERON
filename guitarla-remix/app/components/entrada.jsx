@@ -15,7 +15,7 @@ const Entrada = ({ entrada }) => {
 				<h3>{titulo}</h3>
 				<p className="fecha">{formatearFecha(publishedAt)}</p>
 				<p className="resumen">{contenido}</p>
-				<Link className="enlace" to={`/entradas/${url}`}>
+				<Link className="enlace" to={`/blog/${url}`}>
 					Leer Entrada
 				</Link>
 			</div>

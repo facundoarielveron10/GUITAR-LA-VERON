@@ -1,6 +1,5 @@
 import { useLoaderData } from '@remix-run/react';
 import { getEntrada } from '~/models/entrada.server';
-import styles from '~/styles/blog.css';
 import { formatearFecha } from '~/utils/helpers';
 
 export async function loader({ params }) {
@@ -29,15 +28,6 @@ export function meta({ data }) {
 	};
 }
 
-export function links() {
-	return [
-		{
-			rel: 'stylesheet',
-			href: styles,
-		},
-	];
-}
-
 const Entrada = () => {
 	const entrada = useLoaderData();
 
@@ -45,7 +35,7 @@ const Entrada = () => {
 		entrada?.data[0]?.attributes;
 
 	return (
-		<article className="contenedor entrada mt-3">
+		<article className="entrada mt-3">
 			<img
 				className="imagen"
 				src={imagen?.data?.attributes?.url}
