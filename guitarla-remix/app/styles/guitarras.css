@@ -57,3 +57,45 @@
 .guitarra .precio:hover {
 	color: #00b548;
 }
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+}
+
+.formulario label {
+	font-size: 2.2rem;
+	margin-bottom: 1rem;
+}
+
+.formulario select {
+	text-align: center;
+	padding: 1rem;
+	border-radius: 1rem;
+	border: 1px solid var(--black);
+}
+
+.formulario input[type='submit'] {
+	cursor: pointer;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 1.4rem;
+	margin-top: 3rem;
+	border: none;
+	transition-property: background-color;
+	transition-duration: 300ms;
+	background-color: var(--black);
+	color: var(--white);
+}
+
+.formulario input[type='submit']:hover {
+	background-color: var(--primary);
+}
+
+.error {
+	font-size: 1.8rem;
+	padding: 1rem;
+	border-radius: 0.6rem;
+	color: var(--white);
+	background-color: #de0202;
+}
