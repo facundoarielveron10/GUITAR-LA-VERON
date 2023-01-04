@@ -1,5 +1,6 @@
 .contenido {
 	display: grid;
+	align-items: flex-start;
 	gap: 5rem;
 }
 
@@ -13,8 +14,86 @@
 	padding: 3rem;
 }
 
+.producto {
+	display: grid;
+	position: relative;
+	grid-template-columns: 1fr 3fr;
+	gap: 4rem;
+	align-items: center;
+	padding: 3rem 0;
+	border-bottom: 1px solid #cfcfcf;
+}
+
+.producto:last-of-type {
+	border-bottom: none;
+}
+
+.select {
+	all: unset;
+	width: 100%;
+	text-align: center;
+	padding: 0.5rem;
+	border-radius: 1rem;
+	border: 1px solid #cfcfcf;
+}
+
+.producto p {
+	margin: 0 0 1rem 0;
+}
+
+.producto span {
+	font-weight: 900;
+	font-size: 3.2rem;
+}
+
+.nombre {
+	font-weight: 700;
+	font-size: 4.2rem;
+}
+
+.producto .precio {
+	display: inline-block;
+	font-weight: 700;
+	user-select: none;
+	margin-top: 2rem;
+	transition-property: color;
+	transition-duration: 300ms;
+	color: var(--primary);
+}
+
+.subtotal {
+	font-size: 2.2rem;
+}
+
+.subtotal span {
+	transition-property: color;
+	transition-duration: 300ms;
+}
+
+.precio:hover,
+.subtotal span:hover {
+	color: #00b548;
+}
+
+.btn_eliminar {
+	all: unset;
+	cursor: pointer;
+	position: absolute;
+	top: 3rem;
+	right: 1rem;
+	transition-property: color;
+	transition-duration: 300ms;
+}
+
+.btn_eliminar:hover {
+	color: #ff0000;
+}
+
 .resumen {
+	position: sticky;
+	top: 3rem;
 	padding: 3rem;
 	border-radius: 1rem;
+	user-select: none;
 	background-color: #e5e6e8;
 }
